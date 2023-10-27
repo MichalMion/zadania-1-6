@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <title>Formularz Podanie o Pracę</title>
+</head>
+<body bgcolor="#d6b075">
+    <h1 align="center">Formularz Podanie o Pracę</h1>
+<form enctype="text/plain" action="mailto:mkryniew@ids.gda.pl?subject=Michał Mionskowski 1p gr1" method="Post">
+        <table>
+            <tr>
+                <td>Imię <input type="text" name="imie"></td>
+                <td>Wykształcenie
+                    <select name="wyksz">
+                        <option value="Podstawowe">Podstawowe</option>
+                        <option value="Średnie">Średnie</option>
+                        <option value="Wyższe">Wyższe</option>
+                    </select>
+                </td>
+                <td>
+                    <p>Język Programowania:</p>
+                    <input type="checkbox" name="jezyk" value="HTML" checked>HTML
+                    <input type="checkbox" name="jezyk" value="C++">C++
+                    <input type="checkbox" name="jezyk" value="C#">C#
+                    <input type="checkbox" name="jezyk" value="Java">Java
+                    <input type="checkbox" name="jezyk" value="Python">Python
+                </td>
+            </tr>
+            <tr>
+                <td>Nazwisko <input type="text" name="nazwisko" maxlength="50"> <font size="1">max. 32 znaki</font></td>
+                <td>
+                    <p>Wybierz stanowisko</p>
+                    <select name="stan">
+                        <option value="Programista" >Programista</option>
+                        <option value="Informatyk">Informatyk</option>
+                        <option value="Serwisant">Serwisant</option>
+                        <option value="Grafik 3d">Grafik 3d</option>
+                        <option value="Grafik 2d">Grafik 2d</option>
+                    </select>
+                </td>
+                <td>
+                    <p>Wybierz Stopień zaawansowania</p>
+                    <input type="checkbox" name="stopien[]" value="Junior">Junior<br>
+                    <input type="checkbox" name="stopien[]" value="Junior+">Junior+<br>
+                    <input type="checkbox" name="stopien[]" value="Mid">Mid<br>
+                    <input type="checkbox" name="stopien[]" value="Senior">Senior<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Login <input type="text" value="Login123"name="login" autocomplete="off"></td>
+                <td>
+                    <p>Wymiar pracy</p>
+<select name="praca" selected="false">
+    <option name="-" >-</option>
+    <option name="0.25 etatu" >0.25 etatu</option>
+    <option name="0.5 etatu" >0.5 etatu</option>
+    <option name="etat0.75" >0.75 etatu</option>
+    <option name="etat1" >1 etat</option>
+</select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Hasło <input type="password" name="haslo"></td>
+                <td>
+                    <p>Podaj Dzisiejszą Datę</p>
+                    <input type="date" name="data">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Powiedz coś o sobie:</p>
+                    <textarea style="height:100px;width:200px" name="opis"></textarea>
+                </td>
+                <td>
+                    <input type="checkbox" name="zgoda" value="Zezwalam na przetwarzanie moich danych osobowych">Zezwalam na przetwarzanie moich danych osobowych<br>
+                    <input type="checkbox" name="zgoda" value="Oświadczam że w przypadku dostania się będę dobrym pracownikiem">Oświadczam że w przypadku dostania się będę dobrym pracownikiem<br>
+                    <input type="checkbox" name="zgoda" value="Oświadczam że w przypadku dostania się nie będę oczekiwał zapłaty">Oświadczam że w przypadku dostania się nie będę oczekiwał zapłaty<br>
+                </td>
+				<td>
+
+    </dialog>
+					</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+									<button onclick="alert('Aktualnie nie oferujemy Pracy Zdalenj')" style="height:80px;width:300px">Praca Zdalna</button>
+					<button onclick="alert('Po dostaniu się do naszej firmy będziesz miał obwoiązek do niej dojeżdzac')" style="height:80px;width:300px">Praca Stacjonarna</button><br>
+                    <center><button type="reset">Wyczyść</button>
+                    <button type="submit">Wyślij</button></center>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
