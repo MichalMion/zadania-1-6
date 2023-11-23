@@ -1,9 +1,36 @@
 <html>
 <head>
 <body>
-<!-- www.DarmowyLicznik.pl -->
-<div class="image-rotator"><div class="rotator-slide" id="rotator-slide-1"><a href="https://www.darmowylicznik.pl/" title="Przejdź na stronę licznika" target="_blank"><img src="https://www.darmowylicznik.pl/licznik.php?id=146818" alt="Darmowy licznik odwiedzin" style="border:0px;" /></a></div></div>
-<!-- END www.DarmowyLicznik.pl -->
+<table>
+  <tr>
+    <td width="33%">
+      <p id="licznik">16</p>
+
+<button onclick="zwieksz()">Zwiększ licznik o 1</button>
+
+<script>
+var liczba = 16;
+function zwieksz() {
+  liczba += 1;
+  document.getElementById("licznik").innerHTML = liczba;
+}
+</script>
+    </td>
+    <td width="33%">
+      <div>
+        <script charset="UTF-8" src="https://edodatki.pl/code/ksiega-gosci?data%5BWidget%5D%5Burl%5D=https%3A%2F%2Fmichalmion.github.io%2Fzadania-1-6%2Fifframe_index.html&data%5BWidget%5D%5Bdescription%5D=Ksi%C4%99ga+go%C5%9Bci&data%5BWidget%5D%5Bcolor%5D=white" type="text/javascript"></script>
+        <a href="https://edodatki.pl/widget/ksiega-gosci" title="Księga Gości na stronę">Księga Gości na stronę</a>
+      </div>
+    </td>
+    <td width="33%">
+      <div>
+        <script charset="UTF-8" src="https://edodatki.pl/code/licznik-wizyt?data%5BWidget%5D%5Bdescription%5D=Statystki&data%5BWidget%5D%5Burl%5D=https%3A%2F%2Fmichalmion.github.io%2Fzadania-1-6%2Fifframe_index.html&data%5BWidget%5D%5Bwidth%5D=120&data%5BWidget%5D%5Bcss%5D=white&data%5BWidget%5D%5Bcolor%5D=%23336699&data%5BWidget%5D%5Bstyle%5D=style_1" type="text/javascript"></script>
+        <a href="https://edodatki.pl/widget/licznik-wizyt" title="Licznik wizyt na stronę">Licznik wizyt na stronę</a>
+      </div>
+    </td>
+  </tr>
+</table>
+
 </body>
 </head>
 </html>
